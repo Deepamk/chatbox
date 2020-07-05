@@ -1,0 +1,235 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="container-fluid header">
+          <div class="logo">
+              adagrad
+          </div>
+      </div>
+
+      <div class="container-fluid">
+          <div class="container" style="height:88vh;">
+              <div class="col-md-7" style="margin-left:auto;margin-right:auto;height:85%;">
+                  <div class="row">
+                      <div class="col-md-6 left-msg" >
+                          Which State are you staying?
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4">
+
+                      </div>
+                      <div class="col-md-8" style="margin-top:25px;">
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <input class="form-control" type="text" placeholder="State">
+                              </div>
+                              <div class="col-md-4" style="">
+                                  <a class="btn btn-primary " onclick="langpanel()">Next</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="langpanel">
+                      <div class="row">
+                          <div class="col-md-6 left-msg" style="transition-delay: 2s;">
+                              Which Language do you prefer?
+                          </div>
+                      </div>
+                      <div class="row ">
+                          <div class="col-md-4">
+
+                          </div>
+                          <div class="col-md-8 " style="margin-top:25px;">
+                              <div class="row">
+                                  <div class="col-md-8">
+                                      <select class="custom-select">
+                                          <option selected>Open this select Language</option>
+                                          <option value="1">English</option>
+                                          <option value="2">Hindi</option>
+                                          <option value="3">Marathi</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-4 " style="margin:0px;">
+                                      <a class="btn btn-primary" onclick="citypanel()">Next</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="citypanel">
+                      <div class="row">
+                          <div class="col-md-6 left-msg">
+                              Which city do you live in?
+                          </div>
+                      </div>
+                      <div class="row ">
+                          <div class="col-md-4">
+
+                          </div>
+                          <div class="col-md-8 " style="margin-top:25px;">
+                              <div class="row">
+                                  <div class="col-md-8">
+                                      <input class="form-control" type="text" placeholder="City">
+                                  </div>
+                                  <div class="col-md-4 " style="margin:0px;">
+                                      <a class="btn btn-primary" onclick="agepanel()">Next</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="agepanel">
+                      <div class="row">
+                          <div class="col-md-6 left-msg">
+                              Please Select your age  group
+                          </div>
+                      </div>
+                      <div class="row ">
+                          <div class="col-md-4">
+
+                          </div>
+                          <div class="col-md-8 " style="margin-top:25px;">
+                              <div class="row">
+                                  <div class="col-md-8">
+                                      <select class="custom-select">
+                                          <option selected>Open this to select age</option>
+                                          <option value="1">Less than 18</option>
+                                          <option value="2">19-59</option>
+                                          <option value="3">60+</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-4 " style="margin:0px;">
+                                      <a class="btn btn-primary" onclick="genderpanel()">Next</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="genderpanel">
+                      <div class="row">
+                          <div class="col-md-6 left-msg">
+                              Please Select your gender
+                          </div>
+                      </div>
+                      <div class="row ">
+                          <div class="col-md-4">
+
+                          </div>
+                          <div class="col-md-8 " style="margin-top:25px;">
+                              <div class="row">
+                                  <div class="col-md-8">
+                                      <select class="custom-select">
+                                          <option selected>Open this to select Gender</option>
+                                          <option value="1">Male</option>
+                                          <option value="2">Female</option>
+                                          <option value="3">Other</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-4 " style="margin:0px;">
+                                      <a class="btn btn-primary" onclick="temppanel()">Next</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="temppanel">
+                      <div class="row">
+                          <div class="col-md-6 left-msg">
+                              Please Select your Body temperature
+                          </div>
+                      </div>
+                      <div class="row ">
+                          <div class="col-md-4">
+
+                          </div>
+                          <div class="col-md-8 " style="margin-top:25px;">
+                              <div class="row">
+                                  <div class="col-md-8">
+                                      <select class="custom-select">
+                                          <option selected>Open this to select Body temperature</option>
+                                          <option value="1">Male</option>
+                                          <option value="2">Female</option>
+                                          <option value="3">Other</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-4 " style="margin:0px;">
+                                      <a class="btn btn-primary" onclick="symptpanel()">Next</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="symptpanel">
+                      <div class="row">
+                          <div class="col-md-6 left-msg">
+                              Do you have any symptoms?
+                          </div>
+                      </div>
+                      <div class="row ">
+                          <div class="col-md-4">
+
+                          </div>
+                          <div class="col-md-8 " style="margin-top:25px;">
+                              <div class="row">
+                                  <div class="col-md-8">
+                                      <select class="custom-select">
+                                          <option selected>Open this to select Symptoms</option>
+                                          <option value="1">Dry Cough</option>
+                                          <option value="2">Loss or smell & taste</option>
+                                          <option value="3">Breathlessness</option>
+                                          <option value="3">Difficulty breathing</option>
+                                          <option value="3">Appetite decreased</option>
+                                          <option value="3">Sore Throat</option>
+                                          <option value="3">Sneezing</option>
+                                          <option value="3">weakness</option>
+                                          <option value="3">None of the above mentioned </option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-4 " style="margin:0px;">
+                                      <a class="btn btn-primary" onclick="citypanel()">Next</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <script>
+          function langpanel() {
+              document.getElementById("langpanel").style.display = "block";
+          }
+          function citypanel() {
+              document.getElementById("citypanel").style.display = "block";
+          }
+          function agepanel() {
+              document.getElementById("agepanel").style.display = "block";
+          }
+          function genderpanel() {
+              document.getElementById("genderpanel").style.display = "block";
+          }
+          function temppanel() {
+              document.getElementById("temppanel").style.display = "block";
+          }
+          function symptpanel() {
+              document.getElementById("symptpanel").style.display = "block";
+          }
+      </script>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

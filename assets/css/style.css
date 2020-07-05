@@ -1,0 +1,336 @@
+.header{
+	height:12vh;
+	background:#fafafa;
+	box-shadow: 0px 0px 5px #888888;
+	font-family:ailerons;
+	
+}
+@media screen and (min-width: 601px) {
+	.logo {
+		font-size: 4vw;
+		margin-left: 15vw;
+		color: #121212;
+	}
+}
+@media screen and (max-width: 600px) {
+	.logo {
+		font-size: 10vw;
+		text-align: center;
+		color: #121212;
+	}
+}
+
+
+#panelL {
+	display: none;
+}
+#panelR {
+	display: none;
+}
+#changesymL {
+	display: none;
+}
+#submitbutton {
+	display:none;
+}
+#changesymR {
+	display: none;
+}
+#travelL {
+	display: none;
+}
+
+#travelR {
+	display: none;
+}
+#symptpanelL {
+	display: none;
+}
+
+#symptpanelR {
+	display: none;
+}
+#medicalpanelL {
+	display: none;
+}
+
+#medicalpanelR {
+	display: none;
+}
+#temppanelL {
+	display: none;
+}
+
+#temppanelR {
+	display: none;
+}
+#agepanelL {
+	display: none;
+}
+
+#agepanelR {
+	display: none;
+}
+#genderpanelL {
+	display: none;
+}
+
+#genderpanelR {
+	display: none;
+}
+.left {
+	margin-top: 20px;
+	box-shadow: 0px 0px 5px #888888;
+	width: 60%;
+	padding: 8px;
+	font-weight: 500;
+	
+	border-radius: 15px 15px 15px 0px;
+	animation-name: example;
+	animation-duration: 0.5s;
+}
+@keyframes example {
+	from {
+		width: 0%;
+		height: 0%;
+	}
+
+	to {
+		width: 40%;
+	}
+}
+@keyframes example2 {
+	0% {
+		opacity:0;
+	}
+
+	25% {
+		opacity: 0.25;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@media screen and (min-width: 601px) {
+	.left {
+		margin-top: 20px;
+		box-shadow: 0px 0px 5px #888888;
+		width: 40%;
+		margin-left: 10%;
+		padding: 8px;
+		padding-left: 20px;
+		
+		background-image: linear-gradient(to bottom right,#a3bded, #6991c7);
+		border-radius: 15px 15px 15px 0px;
+		animation-name: example;
+		animation-duration: 0.5s;
+	}
+	.logoImg{
+		margin-top:1%;
+		width:20%;
+	}
+	.right {
+		margin-top: 20px;
+		width: 40%;
+		margin-left: 50%;
+		padding: 8px;
+		right: 0px;
+		transition-delay: 2s;
+		animation-name: example2;
+		animation-duration: 1s;
+	}
+	.rightP {
+		margin-top: 20px;
+		width: 70%;
+		margin-left: 30%;
+		padding: 8px;
+		right: 0px;
+		transition-delay: 2s;
+		animation-name: example2;
+		animation-duration: 1s;
+	}
+	.rightPSym {
+		margin-top: 20px;
+		width: 100%;
+		margin-left: 20%;
+		padding: 8px;
+		right: 0px;
+		transition-delay: 2s;
+		animation-name: example2;
+		animation-duration: 1s;
+	}
+	.inputform {
+		box-shadow: 0px 0px 5px #888888;
+		width:100%;
+		border-radius:10px;
+		
+
+	}
+	.button-class {
+		width: 20%;
+		float: left;
+		box-shadow: 0px 0px 5px #888888;
+		cursor: grab;
+		background-image: linear-gradient(to bottom right,#a3bded, #6991c7);
+		border-radius: 0px 10px 10px 0px;
+		padding: 10px;
+	}
+	.button-class:hover {
+		background-image: linear-gradient(to bottom right,#6991c7, #a3bded);
+	}
+	input[type=text], select {
+		width: 100%;
+		display: inline-block;
+		border-bottom: 1px solid #ccc;
+		border: 0px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	.window {
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%
+	}
+	.agebox {
+		box-shadow: 0px 0px 5px #888888;
+		color:black;
+		text-align:center;
+		border-radius:5px;
+		padding:5px;
+	}
+	
+		
+	.genderbox {
+		box-shadow: 0px 0px 5px #888888;
+		color: black;
+		text-align: center;
+		border-radius: 5px;
+		padding: 5px;
+	}
+	.checkbx {
+		background-color: #339CFF;
+		border-radius: 3px;
+		padding: 10px;
+		box-shadow: 0px 0px 5px #888888;
+		width:28%;
+	}
+
+	
+}
+
+@media screen and (max-width: 600px) {
+	.left {
+		margin-top: 20px;
+		box-shadow: 0px 0px 5px #888888;
+		width: 90%;
+		margin-left: 0%;
+		padding: 8px;
+		padding-left: 20px;
+		background-image: linear-gradient(to bottom right,#a3bded, #6991c7);
+		border-radius: 15px 15px 15px 0px;
+		animation-name: example;
+		animation-duration: 0.5s;
+	}
+	.logoImg{
+		margin-top:5%;
+		width:50%;
+	}
+	.right {
+		margin-top: 20px;
+		width: 90%;
+		margin-left: 10%;
+		padding: 8px;
+		right: 0px;
+		transition-delay: 2s;
+		animation-name: example2;
+		animation-duration: 1s;
+	}
+
+	.rightP {
+		margin-top: 20px;
+		width: 70%;
+		margin-left: 30%;
+		padding: 8px;
+		right: 0px;
+		transition-delay: 2s;
+		animation-name: example2;
+		animation-duration: 1s;
+	}
+
+	.rightPSym {
+		margin-top: 20px;
+		width: 100%;
+		margin-left: 10%;
+		padding: 8px;
+		right: 0px;
+		transition-delay: 2s;
+		animation-name: example2;
+		animation-duration: 1s;
+	}
+
+	.inputform {
+		box-shadow: 0px 0px 5px #888888;
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.button-class {
+		width: 20%;
+		float: left;
+		box-shadow: 0px 0px 5px #888888;
+		cursor: grab;
+		background-image: linear-gradient(to bottom right,#a3bded, #6991c7);
+		border-radius: 0px 10px 10px 0px;
+		padding: 10px;
+	}
+
+		.button-class:hover {
+			background-image: linear-gradient(to bottom right,#6991c7, #a3bded);
+		}
+
+	input[type=text], select {
+		width: 100%;
+		display: inline-block;
+		border-bottom: 1px solid #ccc;
+		border: 0px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+	.window {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%
+	}
+
+	.agebox {
+		box-shadow: 0px 0px 5px #888888;
+		color: black;
+		text-align: center;
+		border-radius: 5px;
+		padding: 5px;
+	}
+
+
+	.genderbox {
+		box-shadow: 0px 0px 5px #888888;
+		color: black;
+		text-align: center;
+		border-radius: 5px;
+		padding: 5px;
+	}
+
+	.checkbx {
+		background-color: #339CFF;
+		border-radius: 3px;
+		padding: 10px;
+		box-shadow: 0px 0px 5px #888888;
+		width:48%;
+	}
+	
+}

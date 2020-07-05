@@ -1,0 +1,433 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Hello, world!</title>
+</head>
+<body>
+    <div class="container-fluid header position-fixed" style="z-index: 99999;">
+        <div class="logo">
+            adagrad
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="window" style="margin-top:12vh;">
+                <div class="left" style="color:#fff">
+                    Which State are you staying?
+                </div>
+                <div class="right" style="color:#fff">
+                    <div class="inputform" style="float:left;">
+
+                        <div style="width:80%;float:left;padding:10px;" id="inputarea">
+                            <select>
+                                <option value="volvo">Select one</option>
+                                <option value="volvo">Maharashtra</option>
+                                <option value="saab">Chhattisgarh</option>
+                                <option value="opel">Assam</option>
+                                <option value="audi">Telangana</option>
+                            </select>
+                        </div>
+                        <div class="button-class" id="button" onclick="panel()">
+                            Next
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+                <div class="left" id="panelL" style="color:#fff">
+                    Which City are you staying?
+                </div>
+                <div class="right" id="panelR" style="color:#fff">
+                    <div class="inputform" style="float:left;">
+                        <div style="width:80%;float:left;padding:10px;" id="cityinputarea">
+                            <input type="text" placeholder="City">
+                        </div>
+                        <div class="button-class" onclick="agepanel()" id="citybutton">
+                            Next
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+                <div class="left" id="agepanelL" style="color:#fff">
+                    Please Select your age group
+                </div>
+                <div class="right" id="agepanelR" style="color:#fff">
+                    <div class="row" onclick="genderpanel()">
+                        <div class="col-md-3 agebox" id="agebox1" onclick="age1color()">
+                            < 18
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 agebox" id="agebox2" onclick="age2color()">
+                            18-59
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 agebox" id="agebox3" onclick="age3color()">
+                            60 +
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                </div>
+
+                <div class="left" id="genderpanelL" style="color:#fff">
+                    Please Select your gender
+                </div>
+                <div class="right" id="genderpanelR" style="color:#fff">
+                    <div class="row" onclick="temppanel()">
+                        <div class="col-md-3 genderbox" id="gbox1" onclick="gbox1fun()">
+                            Male
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 genderbox" id="gbox2" onclick="gbox2fun()">
+                            Female
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 genderbox" id="gbox3" onclick="gbox3fun()">
+                            Other
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="left" id="temppanelL" style="color:#fff">
+                    Your current body Temperature
+                </div>
+                <div class="rightP" id="temppanelR" style="color:#fff">
+                    <div class="row" onclick="symptpanel()">
+                        <div class="col-md-3 genderbox" id="tempbox1" onclick="tempbox1fun()">
+                            Normal(96°F-98.6°F)
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 genderbox" id="tempbox2" onclick="tempbox2fun()">
+                            Feverish (98.6°F-101°F)
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 genderbox" id="tempbox3" onclick="tempbox3fun()">
+                            High (101°F and above)
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+
+                <div class="left" id="symptpanelL" style="color:#fff">
+                    Do you have any Symptoms?
+                </div>
+                <div class="rightPSym" id="symptpanelR" style="color:#fff">
+                    <div class="row">
+                        <div class="form-check form-check-inline" style="width:90%;">
+                            <div class="checkbx" style="">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Dry cough</label>
+                            </div>
+
+                            <div class=" checkbx" style="margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Loss or smell& taste</label>
+                            </div>
+
+                            <div class=" checkbx" style="margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Breathlessness</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="form-check form-check-inline" style="width:90%;">
+                            <div class="checkbx" style="">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox4">Difficulty breathing</label>
+                            </div>
+
+                            <div class=" checkbx" style="margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox5">Appetite decreased</label>
+                            </div>
+
+                            <div class=" checkbx" style="margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox6">Sore throat</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="form-check form-check-inline" style="width:90%;">
+                            <div class="checkbx" style="">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox7">Sneezing</label>
+                            </div>
+
+                            <div class=" checkbx" style="margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox8">Weakness</label>
+                            </div>
+
+                            <div class=" checkbx" style="margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox9">None of the above</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-9">
+
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" onclick="travelpanel()" class="btn btn-info">Next</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="left" id="travelL" style="color:#fff">
+                    Do you have any history of travel?
+                </div>
+                <div class="right" id="travelR" style="color:#fff">
+                    <div class="inputform" style="float:left;">
+
+                        <div style="width:80%;float:left;padding:10px;" id="travelinputarea">
+                            <select>
+                                <option value="volvo">Select one</option>
+                                <option value="volvo">Travelled to affected countries recently</option>
+                                <option value="saab">
+                                    Came into contact with someone from/or
+                                    have travelled through the affected countries
+                                </option>
+                                <option value="opel">No history of contact but feeling symptoms </option>
+                                <option value="audi">No history of contact and symptoms</option>
+                            </select>
+                        </div>
+                        <div class="button-class" id="travelbutton" onclick="medicalpanel()">
+                            Next
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+                <div class="left" id="medicalpanelL" style="color:#fff">
+                    Do you have any Medical History?
+                </div>
+                <div class="rightPSym" id="medicalpanelR" style="color:#fff">
+                    <div class="row">
+                        <div class="form-check form-check-inline" style="width:90%;">
+                            <div class="checkbx" style="width:28%;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox10">Asthma / lung disease</label>
+                            </div>
+
+                            <div class=" checkbx" style="width:28%;margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox11">Diabetes</label>
+                            </div>
+
+                            <div class=" checkbx" style="width:28%;margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox12">Heart disease</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="form-check form-check-inline" style="width:90%;">
+                            <div class="checkbx" style="width:28%;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox13">Stroke </label>
+                            </div>
+
+                            <div class=" checkbx" style="width:28%;margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox14">Kidney disease</label>
+                            </div>
+
+                            <div class=" checkbx" style="width:28%;margin-left:20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox15">Reduced immunity</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-9">
+
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" onclick="changesympanel()" class="btn btn-info">Next</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="left" id="changesymL" style="color:#fff">
+                    Symptoms have, over last 48 hours
+                </div>
+                <div class="right" id="changesymR" style="color:#fff">
+                    <div class="inputform" style="float:left;">
+
+                        <div style="width:80%;float:left;padding:10px;" id="travelinputarea">
+                            <select>
+                                <option value="volvo">Select one</option>
+                                <option value="volvo">Increased</option>
+                                <option value="saab">
+                                    Decreased
+                                </option>
+                                <option value="opel">No change  </option>
+                                <option value="audi">Can’t say </option>
+                            </select>
+                        </div>
+                        <div class="button-class" id="travelbutton" onclick="submitbutton()">
+                            Next
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br /><br /><br /><br />
+
+        </div>
+    </div>
+    <div class="container-fluid" id="submitbutton" style="width:100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="margin-left:auto;margin-right:auto;">
+                    <button type="button" class="btn btn-success">Submit Your Response</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function panel() {
+            document.getElementById("panelL").style.display = "block";
+            document.getElementById("panelR").style.display = "block";
+            document.getElementById("button").style.display = "none";
+            document.getElementById("inputarea").style.width = "100%";
+        }
+        function submitbutton() {
+            document.getElementById("submitbutton").style.display = "block";
+
+        }
+        function medicalpanel() {
+            document.getElementById("medicalpanelL").style.display = "block";
+            document.getElementById("medicalpanelR").style.display = "block";
+            document.getElementById("travelbutton").style.display = "none";
+            document.getElementById("travelinputarea").style.width = "100%";
+        }
+        function travelpanel() {
+            document.getElementById("travelL").style.display = "block";
+            document.getElementById("travelR").style.display = "block";
+        }
+        function changesympanel() {
+            document.getElementById("changesymL").style.display = "block";
+            document.getElementById("changesymR").style.display = "block";
+        }
+        function agepanel() {
+            document.getElementById("agepanelL").style.display = "block";
+            document.getElementById("agepanelR").style.display = "block";
+            document.getElementById("citybutton").style.display = "none";
+            document.getElementById("cityinputarea").style.width = "100%";
+        }
+        function genderpanel() {
+            document.getElementById("genderpanelL").style.display = "block";
+            document.getElementById("genderpanelR").style.display = "block";
+
+        }
+        function temppanel() {
+            document.getElementById("temppanelL").style.display = "block";
+            document.getElementById("temppanelR").style.display = "block";
+
+        }
+        function symptpanel() {
+            document.getElementById("symptpanelL").style.display = "block";
+            document.getElementById("symptpanelR").style.display = "block";
+
+        }
+        function age1color() {
+            document.getElementById("agebox1").style.backgroundColor = "#339CFF";
+            document.getElementById("agebox1").style.color = "#fff";
+            document.getElementById("agebox2").style.backgroundColor = "#fff";
+            document.getElementById("agebox3").style.backgroundColor = "#fff";
+            document.getElementById("agebox2").style.color = "black";
+            document.getElementById("agebox3").style.color = "black";
+        }
+        function age2color() {
+            document.getElementById("agebox2").style.backgroundColor = "#339CFF";
+            document.getElementById("agebox2").style.color = "#fff";
+            document.getElementById("agebox1").style.backgroundColor = "#fff";
+            document.getElementById("agebox3").style.backgroundColor = "#fff";
+            document.getElementById("agebox1").style.color = "black";
+            document.getElementById("agebox3").style.color = "black";
+        }
+        function age3color() {
+            document.getElementById("agebox3").style.backgroundColor = "#339CFF";
+            document.getElementById("agebox3").style.color = "#fff";
+            document.getElementById("agebox1").style.backgroundColor = "#fff";
+            document.getElementById("agebox2").style.backgroundColor = "#fff";
+            document.getElementById("agebox1").style.color = "black";
+            document.getElementById("agebox2").style.color = "black";
+        }
+        function gbox1fun() {
+            document.getElementById("gbox1").style.backgroundColor = "#339CFF";
+            document.getElementById("gbox1").style.color = "#fff";
+            document.getElementById("gbox2").style.backgroundColor = "#fff";
+            document.getElementById("gbox3").style.backgroundColor = "#fff";
+            document.getElementById("gbox2").style.color = "black";
+            document.getElementById("gbox3").style.color = "black";
+        }
+        function gbox2fun() {
+            document.getElementById("gbox2").style.backgroundColor = "#339CFF";
+            document.getElementById("gbox2").style.color = "#fff";
+            document.getElementById("gbox1").style.backgroundColor = "#fff";
+            document.getElementById("gbox3").style.backgroundColor = "#fff";
+            document.getElementById("gbox1").style.color = "black";
+            document.getElementById("gbox3").style.color = "black";
+        }
+        function gbox3fun() {
+            document.getElementById("gbox3").style.backgroundColor = "#339CFF";
+            document.getElementById("gbox3").style.color = "#fff";
+            document.getElementById("gbox1").style.backgroundColor = "#fff";
+            document.getElementById("gbox2").style.backgroundColor = "#fff";
+            document.getElementById("gbox1").style.color = "black";
+            document.getElementById("gbox2").style.color = "black";
+        }
+        function tempbox1fun() {
+            document.getElementById("tempbox1").style.backgroundColor = "#339CFF";
+            document.getElementById("tempbox1").style.color = "#fff";
+            document.getElementById("tempbox2").style.backgroundColor = "#fff";
+            document.getElementById("tempbox3").style.backgroundColor = "#fff";
+            document.getElementById("tempbox2").style.color = "black";
+            document.getElementById("tempbox3").style.color = "black";
+        }
+        function tempbox2fun() {
+            document.getElementById("tempbox2").style.backgroundColor = "#339CFF";
+            document.getElementById("tempbox2").style.color = "#fff";
+            document.getElementById("tempbox1").style.backgroundColor = "#fff";
+            document.getElementById("tempbox3").style.backgroundColor = "#fff";
+            document.getElementById("tempbox1").style.color = "black";
+            document.getElementById("tempbox3").style.color = "black";
+        }
+        function tempbox3fun() {
+            document.getElementById("tempbox3").style.backgroundColor = "#339CFF";
+            document.getElementById("tempbox3").style.color = "#fff";
+            document.getElementById("tempbox1").style.backgroundColor = "#fff";
+            document.getElementById("tempbox2").style.backgroundColor = "#fff";
+            document.getElementById("tempbox1").style.color = "black";
+            document.getElementById("tempbox2").style.color = "black";
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿@font-face {
+    font-family: 'ailerons';
+    src: url('Ailerons-Regular.eot');
+    src: url('Ailerons-Regular.eot') format('embedded-opentype'), 
+        url('Ailerons-Regular.ttf') format('truetype'), 
+        url('Ailerons-Regular.woff') format('woff'),
+        url('Ailerons-Regular.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
